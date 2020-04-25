@@ -1,0 +1,7 @@
+{
+  "name": "react-starter-minimal",
+  "short_name": "react-starter-minimal",
+  "description": "minimalist react starter",
+  "start_url": "./?manifest=true",
+  "display": "standalone"
+}

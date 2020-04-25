@@ -1,0 +1,18 @@
+{
+
+  "plugins": [["@babel/plugin-syntax-dynamic-import"]],
+  "env": {
+    "development": {
+      "plugins": ["react-hot-loader/babel"],
+      "sourceMaps": "inline",
+      "presets": ["@babel/preset-env"]
+    },
+    "production": {
+      "sourceType": "unambiguous",
+      "presets": ["@babel/preset-env", {
+        "modules": false,
+        "chrome": "last 2 versions",
+        }],
+    },
+  },
+}

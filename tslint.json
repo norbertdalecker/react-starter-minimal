@@ -1,0 +1,42 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:latest", "tslint-react", "tslint-sonarts"],
+  "rules": {
+    "max-line-length": 500,
+    "arrow-parens": false,
+    "trailing-comma": false,
+    "no-submodule-imports": false,
+    "interface-name": [true, "never-prefix"],
+    "object-literal-sort-keys": false,
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": [true, "never"],
+    "member-access": [true, "no-public"],
+    "member-ordering": [true, "statics-first"],
+    "only-arrow-functions": [true, "allow-declarations"],
+    "quotemark": [true, "single", "avoid-escape"],
+    "array-type": [true, "array-simple"],
+    "jsx-use-translation-function": true,
+    "no-implicit-dependencies": false,
+    "max-classes-per-file": false,
+    "no-empty": false,
+    "no-empty-interface": false,
+    "no-object-literal-type-assertion": false,
+    "no-namespace": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "lowercase-last"
+      }
+    ],
+    "variable-name": [true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "class-name": false
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.tsx", "node_modules/**/*.ts"]
+  }
+}
