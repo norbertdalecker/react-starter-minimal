@@ -1,6 +1,4 @@
 const webpack = require("webpack");
-const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
-const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 
 const { devServer, paths, useDebugSymbols } = require("./config");
 
@@ -44,7 +42,5 @@ module.exports = Object.assign({}, base, {
   plugins: [
     ...base.plugins,
     new webpack.HotModuleReplacementPlugin(),
-    new ProgressBarPlugin(),
-    new CaseSensitivePathsPlugin(),
   ]
 });
